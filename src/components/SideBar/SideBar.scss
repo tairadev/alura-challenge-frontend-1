@@ -1,0 +1,50 @@
+.sidebar {
+  h3 {
+    color: var(--title);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.4em;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 16px 0 0;
+    li {
+      a {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        .icon-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 48px;
+          height: 48px;
+          border-radius: 16px;
+          background: #5081fb29;
+          img {
+            opacity: 0.48;
+          }
+        }
+        p {
+          opacity: 0.56;
+        }
+      }
+      &.active {
+        a {
+          .icon-container {
+            background: #5081fb;
+            img {
+              opacity: 1;
+            }
+          }
+          p {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
