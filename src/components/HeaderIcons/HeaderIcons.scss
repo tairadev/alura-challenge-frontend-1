@@ -1,0 +1,34 @@
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  .user {
+    display: none;
+  }
+
+  @media (min-width: 769px) {
+    .search {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .hamburger {
+      display: none;
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      gap: 8px;
+      border-radius: 8px;
+
+      img {
+        max-width: 32px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
