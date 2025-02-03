@@ -2,11 +2,24 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 24px;
   height: 56px;
   width: 100%;
   max-width: calc(100% - 32px);
   margin: 16px auto 24px;
+
+  .left-col {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    gap: 24px;
+  }
+
+  .logo-container {
+    min-width: 200px;
+  }
 
   .logo {
     max-width: 145px;
@@ -14,6 +27,7 @@ header {
 
   .search-input {
     display: none;
+    width: 100%;
   }
 
   @media (min-width: 769px) {

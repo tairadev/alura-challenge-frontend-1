@@ -1,4 +1,6 @@
 .sidebar {
+  display: none;
+  min-width: 200px;
   h3 {
     color: var(--title);
     font-size: 12px;
@@ -46,5 +48,9 @@
         }
       }
     }
+  }
+
+  @media (min-width: 769px) {
+    display: block;
   }
 }
