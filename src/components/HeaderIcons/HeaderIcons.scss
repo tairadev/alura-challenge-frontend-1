@@ -1,6 +1,7 @@
 .header-icons {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 4px;
 
   .user {
@@ -20,10 +21,11 @@
     .user {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
       padding: 12px;
       gap: 8px;
       border-radius: 8px;
+      min-width: 272px;
 
       img {
         max-width: 32px;

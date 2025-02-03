@@ -1,0 +1,42 @@
+.code-editor-view {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  .left-content {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .right-content {
+    min-width: 272px;
+    max-width: 272px;
+    h3 {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.4em;
+      color: var(--title);
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      word-break: break-word;
+    }
+    input {
+      max-width: 272px;
+    }
+  }
+  @media (min-width: 769px) {
+    .left-content {
+      display: block;
+      max-width: 431px;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .left-content {
+      max-width: 752px;
+    }
+  }
+}
